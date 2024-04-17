@@ -2,7 +2,8 @@ package org.example;
 
 public class Main {
     public static void main(String[] args) {
-        example3();
+        //example3();
+        exByAnna();
     }
 
     private static void example1() {
@@ -57,5 +58,14 @@ public class Main {
         });
 
         blueM.paint("Кот");
+    }
+    public static void exByAnna(){
+        Marker purpleM = new Marker("purple");
+        purpleM.setImage(e ->{
+            System.out.println("!!!!!!!!!!!!!");
+            System.out.println("рисую " + e + " стиле нуар");
+            System.out.println("!!!!!!!!!!!!!");
+        });
+        purpleM.paint("Гиппопотам");
     }
 }
